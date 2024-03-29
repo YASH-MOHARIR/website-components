@@ -1,0 +1,55 @@
+html {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+body {
+  overflow: hidden;
+  width: 100%;
+}
+
+.smooth-scroll-wrapper {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  transition-timing-function: linear;
+}
+.smooth-scroll-wrapper .content {
+  display: flex;
+}
+.smooth-scroll-wrapper .content .image-content {
+  width: 80vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  margin-left: 10vw;
+}
+.smooth-scroll-wrapper .content .image-content .image {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.smooth-scroll-wrapper .content .image-content .image-windowed {
+  border-radius: 20px;
+  height: 80vh;
+}
+
+.show {
+  width: 100% !important;
+}
+
+.image-windowed-show {
+  height: 100% !important;
+  width: 100% !important;
+}/*# sourceMappingURL=style.css.map */

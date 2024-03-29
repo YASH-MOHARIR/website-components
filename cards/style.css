@@ -1,0 +1,73 @@
+.main {
+  font-family: sans-serif;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.main .card-container {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main .card-container .card {
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.main .card-container .card p {
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 5px;
+  transition: all 0.7s ease;
+}
+.main .card-container .card span {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 50%;
+  width: 5%;
+  height: 5%;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  transition: all 0.7s ease;
+}
+
+.expand {
+  width: 60%;
+  opacity: 1;
+}
+.expand p {
+  opacity: 1;
+  display: block;
+}
+
+.compact {
+  opacity: 0.5;
+  width: 10%;
+}
+.compact p {
+  opacity: 0;
+  display: none;
+}
+.compact span {
+  font-size: 0;
+}
+
+.icon-shrink {
+  width: 1% !important;
+  height: 1% !important;
+}/*# sourceMappingURL=style.css.map */

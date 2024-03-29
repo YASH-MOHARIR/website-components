@@ -1,0 +1,35 @@
+body{
+    background-color: #eff5ff;
+}
+.container{
+    // height: 90vh;
+    overflow: hidden;
+    width: 90vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200px;
+    text-align: left;
+    margin: auto;
+    margin-top: 10%;
+
+    .text{
+        display: inline-block;
+        opacity: 1;
+        
+        transition: all  ease-out;
+        transform: translate3d(0, 30px, -30px) 
+        rotate3d(1, 0, 0, 90deg)
+        rotateZ(-10deg); 
+        translate: 0px 100px;
+        
+    }
+    .text:nth-last-child(1){
+        transition: all 1.5s ease;
+        
+    }
+    .text-appear{
+        transform: translate3d(0, 0, 0) rotate3d(1, 0, 0, 0) rotateZ(0); ;
+        translate: 0px 0px;
+        opacity: 1;
+
+    }
+}

@@ -1,0 +1,25 @@
+body {
+  overflow-x: hidden;
+}
+
+.horizontal-scroll-wrapper {
+  width: 100px;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.horizontal-scroll-wrapper > div {
+  width: 100px;
+  height: 100px;
+}
+
+.horizontal-scroll-wrapper {
+  transform: rotate(-90deg);
+  transform-origin: right top;
+}
+
+.horizontal-scroll-wrapper div {
+  transform: rotate(90deg);
+  transform-origin: right top;
+}/*# sourceMappingURL=style.css.map */

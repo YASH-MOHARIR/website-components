@@ -1,0 +1,45 @@
+body {
+  background-color: rgba(202, 202, 202, 0.11);
+}
+
+.container {
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.container .btn {
+  height: 1em;
+  width: 4em;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.0392156863), 0 2px 4px rgba(0, 0, 0, 0.0392156863);
+  transition: all 0.3s ease;
+  position: relative;
+  margin-top: 200px;
+  text-align: center;
+  font-size: 3.2em;
+  overflow: hidden;
+}
+.container .btn .text {
+  top: 0;
+  left: 0%;
+  position: absolute;
+  padding: 10px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.1, 1);
+}
+.container .btn .text2 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 10px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.1, 1);
+  transform: translateY(-100%);
+}
+.container .btn-hover {
+  transform: translateY(100%);
+}
+.container .btn-hover-reveal {
+  transform: translateY(0) !important;
+}/*# sourceMappingURL=style.css.map */

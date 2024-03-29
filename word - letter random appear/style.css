@@ -1,0 +1,12 @@
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.effect-text {
+  margin-top: 40vh;
+  font-family: monospace;
+}/*# sourceMappingURL=style.css.map */

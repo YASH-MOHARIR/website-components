@@ -1,0 +1,57 @@
+/*# sourceMappingURL=style.css.map */
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    
+    .img-container{  
+        position: absolute;
+        overflow: hidden;
+    
+        display: flex; 
+        align-items: center; 
+        justify-content: center;    
+        
+        width: 60%;
+        height: 40%;
+        border-radius: 20px;
+
+        img{ 
+            width: 120%;
+            height: 120%;
+            border-radius: 20px;  
+            
+        }
+        img:hover{
+            animation: cameraFocus 0.5s ease; 
+        }
+         
+    }
+}
+
+@keyframes cameraFocus {
+    0%{ 
+
+    }
+
+    25%{ 
+        filter: blur(5px);
+    }
+
+    50%{ 
+        filter: blur(0px);
+    }
+
+    75%{ 
+        filter: blur(3px);
+    }
+    90%{ 
+        filter: blur(2px);
+    }
+  
+    100%{
+        filter: blur(0px);
+    }
+}
